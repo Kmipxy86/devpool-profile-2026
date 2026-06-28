@@ -6,10 +6,10 @@
 <title>แคทลียา ราโชกาญจน์ (กวาง) — DevPool</title>
 <meta name="description" content="หน้าเว็บแนะนำตัว แคทลียา ราโชกาญจน์ สำหรับสมัครเข้า DevPool · ผพค.กสข.กฟต.1" />
 
-<!-- ฟอนต์: Bai Jamjuree (หัวข้อ) + Sarabun (เนื้อหา) -->
+<!-- ฟอนต์: Mitr (หัวข้อ) + IBM Plex Sans Thai Looped (เนื้อหา) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600&family=Mitr:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
 <style>
   /* ============================================================
@@ -57,7 +57,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: "Sarabun", system-ui, sans-serif;
+    font-family: "IBM Plex Sans Thai Looped", system-ui, sans-serif;
     background:
       radial-gradient(1100px 600px at 88% -8%, color-mix(in srgb, var(--brand) 22%, transparent), transparent 60%),
       radial-gradient(800px 500px at -5% 10%, color-mix(in srgb, var(--gold-500) 14%, transparent), transparent 55%),
@@ -69,7 +69,8 @@
   }
 
   h1, h2, h3, .display {
-    font-family: "Bai Jamjuree", "Sarabun", sans-serif;
+    font-family: "Mitr", "IBM Plex Sans Thai Looped", sans-serif;
+    font-weight: 500;
     line-height: 1.2;
     letter-spacing: .2px;
   }
@@ -90,20 +91,20 @@
     padding: 14px 0;
   }
   .brandmark { display: flex; align-items: center; gap: 10px; font-weight: 700;
-    font-family: "Bai Jamjuree", sans-serif; }
+    font-family: "Mitr", sans-serif; }
   .spark {
     width: 30px; height: 30px; border-radius: 9px;
     background: linear-gradient(140deg, var(--violet-500), var(--violet-900));
     display: grid; place-items: center; color: var(--gold-300);
     box-shadow: 0 6px 18px -6px var(--violet-700);
   }
-  .brandmark small { display:block; font-family:"Sarabun"; font-weight:400;
+  .brandmark small { display:block; font-family:"IBM Plex Sans Thai Looped"; font-weight:400;
     font-size:.72rem; color: var(--ink-soft); letter-spacing:0; }
 
   .theme-btn {
     border: 1px solid var(--line); background: var(--surface);
     color: var(--ink); cursor: pointer;
-    padding: 9px 14px; border-radius: 999px; font-family: "Sarabun";
+    padding: 9px 14px; border-radius: 999px; font-family: "IBM Plex Sans Thai Looped";
     font-size: .9rem; font-weight: 500; display: flex; align-items: center; gap: 8px;
     transition: transform .15s ease, border-color .2s ease, background .3s;
   }
@@ -119,7 +120,7 @@
     width: 132px; height: 132px; border-radius: 28px;
     background: linear-gradient(155deg, var(--violet-500), var(--violet-900) 75%);
     display: grid; place-items: center;
-    font-family: "Bai Jamjuree"; font-weight: 700; font-size: 3.1rem;
+    font-family: "Mitr"; font-weight: 700; font-size: 3.1rem;
     color: var(--gold-300);
     box-shadow: var(--shadow), inset 0 0 0 2px rgba(255,255,255,.08);
     position: relative; overflow: hidden;
@@ -160,7 +161,7 @@
     display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
   }
   .section-title .num {
-    font-family: "Bai Jamjuree"; font-weight: 700; color: var(--brand-2);
+    font-family: "Mitr"; font-weight: 700; color: var(--brand-2);
     font-size: .95rem; border: 1.5px solid var(--line); border-radius: 9px;
     padding: 2px 9px;
   }
@@ -185,7 +186,7 @@
   .more p { color: var(--ink-soft); }
   .link-btn {
     margin-top: 14px; background: none; border: none; cursor: pointer;
-    color: var(--brand); font-family: "Sarabun"; font-weight: 600; font-size: .98rem;
+    color: var(--brand); font-family: "IBM Plex Sans Thai Looped"; font-weight: 600; font-size: .98rem;
     display: inline-flex; align-items: center; gap: 6px; padding: 0;
   }
   .link-btn .ar { transition: transform .3s ease; }
@@ -194,7 +195,7 @@
   /* ===== ส่วน interactive: เครื่องชาร์จพลัง ===== */
   .play-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
   .energy-num {
-    font-family: "Bai Jamjuree"; font-weight: 700; font-size: 2.6rem; color: var(--brand);
+    font-family: "Mitr"; font-weight: 700; font-size: 2.6rem; color: var(--brand);
     line-height: 1;
   }
   .meter { height: 12px; border-radius: 999px; background: var(--bg);
@@ -206,7 +207,7 @@
   }
   .charge-btn {
     width: 100%; cursor: pointer; border: none; border-radius: 14px;
-    padding: 14px; font-family: "Bai Jamjuree"; font-weight: 600; font-size: 1.02rem;
+    padding: 14px; font-family: "Mitr"; font-weight: 600; font-size: 1.02rem;
     color: #fff; background: linear-gradient(135deg, var(--violet-500), var(--violet-700));
     box-shadow: 0 12px 26px -12px var(--violet-700);
     transition: transform .12s ease, filter .2s;
@@ -219,7 +220,7 @@
   .field {
     width: 100%; border: 1px solid var(--line); background: var(--bg-soft);
     color: var(--ink); border-radius: 12px; padding: 12px 14px;
-    font-family: "Sarabun"; font-size: 1rem; transition: border-color .2s, box-shadow .2s;
+    font-family: "IBM Plex Sans Thai Looped"; font-size: 1rem; transition: border-color .2s, box-shadow .2s;
   }
   .field:focus { outline: none; border-color: var(--brand);
     box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand) 18%, transparent); }
@@ -233,14 +234,14 @@
   /* ===== สภาพอากาศ (API) ===== */
   .weather { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
   .weather .icon { font-size: 3.4rem; line-height: 1; }
-  .weather .temp { font-family: "Bai Jamjuree"; font-weight: 700; font-size: 2.4rem; color: var(--brand); }
+  .weather .temp { font-family: "Mitr"; font-weight: 700; font-size: 2.4rem; color: var(--brand); }
   .weather .desc { color: var(--ink-soft); }
   .weather .meta { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 6px; font-size: .9rem; }
   .weather .meta b { color: var(--ink); }
   .city-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
   .city-btn {
     border: 1px solid var(--line); background: var(--bg-soft); color: var(--ink);
-    padding: 7px 14px; border-radius: 999px; cursor: pointer; font-family: "Sarabun";
+    padding: 7px 14px; border-radius: 999px; cursor: pointer; font-family: "IBM Plex Sans Thai Looped";
     font-size: .9rem; transition: all .2s;
   }
   .city-btn:hover { border-color: var(--brand); }
@@ -293,9 +294,14 @@
 
   <!-- HERO -->
   <main>
-    <section class="hero">
+     <section class="hero">
       <div class="wrap hero-grid">
-        <div class="avatar reveal" aria-hidden="true">ก</div>
+        <div class="avatar reveal">
+          <span class="avatar-fallback" aria-hidden="true">ก</span>
+          <!-- 🖼️ ภาพโปรไฟล์: เปลี่ยน src ให้ตรงกับชื่อไฟล์รูปของคุณ (วางไฟล์รูปไว้โฟลเดอร์เดียวกับ index.html) -->
+          <img id="avatarImg" class="avatar-img" src="profile.jpg"
+               alt="ภาพโปรไฟล์ แคทลียา ราโชกาญจน์" onerror="this.remove();" />
+        </div>
         <div class="reveal">
           <span class="eyebrow">⚡ ผู้สมัคร DevPool</span>
           <h1>แคทลียา ราโชกาญจน์ <span class="nick">(กวาง)</span></h1>
@@ -341,7 +347,7 @@
         <div class="card reveal">
           <div class="section-title">
             <span class="num">02</span>
-            <h2>สิ่งที่ถนัด &amp; สนใจ</h2>
+            <h2>สิ่งที่ต้องการพัฒนา &amp; สนใจ</h2>
           </div>
           <p class="muted">เครื่องมือและทักษะที่ใช้สร้างงานให้เพื่อนร่วมงานใช้จริง — แก้ไขรายการนี้ได้ตามต้องการ</p>
           <!-- 🔧 แก้ไขรายการทักษะของคุณได้ที่นี่ -->
@@ -351,8 +357,9 @@
             <span class="chip">Google Apps Script</span>
             <span class="chip">Google Sheets</span>
             <span class="chip">เว็บแอป &amp; Dashboard</span>
-            <span class="chip">ระบบจัดการข้อมูลงานพัสดุ</span>
+            <span class="chip">e-Form ระบบจัดซื้อจัดจ้าง</span>
             <span class="chip">ออกแบบ UX ให้ใช้ง่าย</span>
+            <span class="chip">AI</span>
           </div>
         </div>
       </div>
