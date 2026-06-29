@@ -448,16 +448,17 @@
   const icon = document.getElementById('themeIcon');
   const text = document.getElementById('themeText');
  
-  // อ่านค่าที่เคยเลือกไว้ (กันพังในบางสภาพแวดล้อมด้วย try/catch)
+  // อ่านค่าที่เคยเลือกไว้ หรือใช้ค่าเริ่มต้นใน <html> (กันพังด้วย try/catch)
   let saved = null;
   try { saved = localStorage.getItem('theme'); } catch (e) {}
-  if (saved) applyTheme(saved);
+  applyTheme(saved || root.getAttribute('data-theme') || 'light');
  
   function applyTheme(mode) {
     root.setAttribute('data-theme', mode);
     const dark = mode === 'dark';
-    icon.textContent = dark ? '☀️' : '🌙';
-    text.textContent = dark ? 'โหมดสว่าง' : 'โหมดมืด';
+    // ไอคอน/ข้อความ สื่อถึงโหมดปัจจุบัน
+    icon.textContent = dark ? '🌙' : '☀️';
+    text.textContent = dark ? 'โหมดมืด' : 'โหมดสว่าง';
     try { localStorage.setItem('theme', mode); } catch (e) {}
   }
  
