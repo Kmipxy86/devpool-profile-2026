@@ -456,8 +456,8 @@
   function applyTheme(mode) {
     root.setAttribute('data-theme', mode);
     const dark = mode === 'dark';
-    icon.textContent = dark ? '☀️' : '🌙';
-    text.textContent = dark ? 'โหมดสว่าง' : 'โหมดมืด';
+    icon.textContent = dark ? '🌙' : '☀️';
+    text.textContent = dark ? 'โหมดมืด' : 'โหมดสว่าง';
     try { localStorage.setItem('theme', mode); } catch (e) {}
   }
 
