@@ -447,26 +447,26 @@
   const btn  = document.getElementById('themeBtn');
   const icon = document.getElementById('themeIcon');
   const text = document.getElementById('themeText');
-
-  // ค่าเริ่มต้น: ใช้ค่าที่เคยบันทึก หรือค่าที่ตั้งไว้ใน <html> (light)
+ 
+  // อ่านค่าที่เคยเลือกไว้ (กันพังในบางสภาพแวดล้อมด้วย try/catch)
   let saved = null;
   try { saved = localStorage.getItem('theme'); } catch (e) {}
-  applyTheme(saved || root.getAttribute('data-theme') || 'light';
-
+  if (saved) applyTheme(saved);
+ 
   function applyTheme(mode) {
     root.setAttribute('data-theme', mode);
     const dark = mode === 'dark';
-    icon.textContent = dark ? '🌙' : '☀️';
-    text.textContent = dark ? 'โหมดมืด' : 'โหมดสว่าง';
+    icon.textContent = dark ? '☀️' : '🌙';
+    text.textContent = dark ? 'โหมดสว่าง' : 'โหมดมืด';
     try { localStorage.setItem('theme', mode); } catch (e) {}
   }
-
+ 
   btn.addEventListener('click', function () {
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     applyTheme(next);
   });
 })();
-
+  
 /* ============================================================
    2) ปุ่มอ่านเพิ่มเติม / ซ่อน  (toggle class + aria)
    ============================================================ */
