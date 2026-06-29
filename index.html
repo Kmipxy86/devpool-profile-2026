@@ -448,10 +448,10 @@
   const icon = document.getElementById('themeIcon');
   const text = document.getElementById('themeText');
 
-  // อ่านค่าที่เคยเลือกไว้ (กันพังในบางสภาพแวดล้อมด้วย try/catch)
+  // ค่าเริ่มต้น: ใช้ค่าที่เคยบันทึก หรือค่าที่ตั้งไว้ใน <html> (light)
   let saved = null;
   try { saved = localStorage.getItem('theme'); } catch (e) {}
-  if (saved) applyTheme(saved);
+  applyTheme(saved || root.getAttribute('data-theme') || 'light';
 
   function applyTheme(mode) {
     root.setAttribute('data-theme', mode);
